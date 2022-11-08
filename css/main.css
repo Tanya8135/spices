@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
+  height: auto;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
