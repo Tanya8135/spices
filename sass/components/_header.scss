@@ -1,0 +1,123 @@
+.header {
+    @include tablet {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-list {
+    @include tablet {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    display: none;
+}
+
+.header-link {
+    color: $nav-header;
+}
+
+.select {
+    margin-left: 22px;
+    margin-right: 32px;
+}
+
+.icon-logo {
+  @include tablet {
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    width: 100px;
+  }
+
+  width: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 48px;
+}
+
+.btn-menu {
+  @include desktop {
+    cursor: pointer;
+  }
+
+ 
+  margin: 0;
+  padding: 0;
+  padding: 15px 0 15px 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: none;
+}
+
+.icon-menu {
+  min-width: 34px;
+  min-height: 24px;
+  fill: $menu-header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select {
+border: none;
+}
+
+.option {
+color: fieldtext;
+}
+
+.actions-list {
+    @include tablet {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    display: none;
+}
+
+.actions-list-mob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-actions {
+    @include tablet {
+    min-width: 25px;
+    }
+
+    min-width: 20px;
+    fill: $actions-icon;
+}
+
+.actions-item {
+    @include tablet {
+        margin-right: 30px;
+    }
+
+    padding: 10px 0 10px 0;
+    margin-right: 20px;
+
+    &:nth-child(2) {
+        margin-right: 0;
+    }
+}
