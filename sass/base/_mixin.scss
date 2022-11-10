@@ -1,5 +1,11 @@
-@mixin min-mobile {
-  @media screen and (min-width: 320px) and (max-width: 479px) {
+@mixin desktop {
+  @media screen and (min-width: 1200px) and (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     @content;
   }
 }
@@ -10,14 +16,8 @@
   }
 }
 
-@mixin tablet {
-  @media screen and (min-width: 768px) and (max-width: 1469px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: 1470px) and (max-width: 1920px) {
+@mixin min-mobile {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
     @content;
   }
 }
@@ -40,5 +40,3 @@
   font-size: $fs;
   line-height: $lh;
 }
-
-
