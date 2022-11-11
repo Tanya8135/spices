@@ -1,15 +1,19 @@
 .hero-box {
   padding: 0;
-  position: relative;
+  // position: relative;
 }
 
 .hero {
-//   position: absolute;
-//   top: 0px;
-//   left: 0px;
-//   z-index: -1;
-  max-width: 1600px;
-  text-align: center;
+  //   position: absolute;
+  //   top: 0px;
+  //   left: 0px;
+  //   z-index: -1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  width: 100vw;
+  max-width: 767px;
   padding: 290px 0px 290px 0px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,8 +26,42 @@
       url(../../images/bg-fon_hero/bg-fon-mob@2.jpg);
   }
 
-//   margin-right: 0 auto;
-//   margin-left: 0 auto;
+  @include tablet {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    width: 100vw;
+    max-width: 1199px;
+    background-image: linear-gradient(rgba(61, 61, 61, 0.5), rgba(61, 61, 61, 0)),
+      url(../../images/bg-fon_hero/bg-fon-tabl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: linear-gradient(rgba(61, 61, 61, 0.5) 0%, rgba(61, 61, 61, 0)),
+        url(../../images/bg-fon_hero/bg-fon-tabl@2.jpg);
+    }
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    width: 100vw;
+    max-width: 1920px;
+    background-image: linear-gradient(rgba(61, 61, 61, 0.5), rgba(61, 61, 61, 0)),
+      url(../../images/bg-fon_hero/bg-fon-desс.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 393px 0 393px 0;
+
+    @include retina {
+      background-image: linear-gradient(rgba(61, 61, 61, 0.5) 0%, rgba(61, 61, 61, 0)),
+        url(../../images/bg-fon_hero/bg-fon-desc@2.jpg);
+    }
+  }
 
   &-title {
     @include font(32px, 300, 1.2);
@@ -31,21 +69,35 @@
     margin: 0 auto;
     max-width: 261px;
     color: $hero-title;
-    padding-bottom: 15px;
-
-    
+    margin-bottom: 16px;
+    text-align: center;
   }
 }
 
 .hero-line {
-    margin: 0 auto;
-    border-bottom: 1px solid $line-hero;
-    width: 120px;
+  margin: 0 auto;
+  border-bottom: 1px solid $line-hero;
+  width: 120px;
+  margin-bottom: 16px;
 }
 
 .hero-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+  @include font(16px, 300, 1.1);
+  text-transform: uppercase;
+  color: $bth-text-hero;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: none;
+}
+
+.icon-btn {
+  width: 20px;
+  fill: $bth-text-hero;
+  align-self: center;
 }

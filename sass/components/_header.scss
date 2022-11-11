@@ -1,15 +1,30 @@
 .header {
-  @include tablet {
+  // @include tablet {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  @include desktop {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
   }
 
   display: flex;
   align-items: center;
   justify-content: space-around;
-//   min-width: 1600px;
   padding: 0;
+  position: relative;
+}
+
+.nav-box {
+  display: flex;
+}
+
+.actions-box {
+  display: flex;
 }
 
 .header-nav {
@@ -19,29 +34,71 @@
 }
 
 .header-list {
-  @include tablet {
+  @include desktop {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 233px;
+    padding: 50px 0 50px 0;
   }
 
   display: none;
+}
+
+.header-item {
+  margin-right: 25px;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
 
 .header-link {
   color: $nav-header;
 }
 
-// .select {
-//     margin-left: 22px;
-//     margin-right: 32px;
-// }
+.select-box {
+  @include desktop {
+    display: flex;
+    // margin-left: 292px;
+  }
+}
+
+.select-mob {
+  @include tablet {
+    margin-left: 42px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  margin-left: 22px;
+  margin-right: 42px;
+
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 50px;
+}
+
+.select-desktop {
+  @include desktop {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+
+  display: none;
+}
 
 .icon-logo {
   @include tablet {
-    width: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 70px;
   }
 
   @include desktop {
@@ -49,21 +106,37 @@
   }
 
   width: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  //   margin-right: 34px;
   cursor: none;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include tablet {
+    position: absolute;
+    top: 10%;
+    left: 46%;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 10%;
+    left: 46%;
+  }
+
+  position: absolute;
+  top: 10%;
+  left: 44%;
 }
 
 .btn-menu {
+  @include tablet {
+    padding: 30px 0 30px 0;
+  }
+
   @include desktop {
     cursor: pointer;
+    margin-right: 84px;
+    margin-left: 100px;
+    padding: 50px 0 50px 0;
   }
 
   margin: 0;
@@ -84,14 +157,6 @@
   justify-content: center;
 }
 
-.select {
-  border: none;
-}
-
-.option {
-  color: fieldtext;
-}
-
 .actions-list {
   @include tablet {
     display: flex;
@@ -103,6 +168,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-left: 76px;
   }
 
   display: none;
@@ -132,6 +199,28 @@
 .actions-item {
   @include tablet {
     margin-right: 30px;
+    padding: 30px 0 30px 0;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-left: 30px;
+    }
+  }
+
+  @include desktop {
+    margin-right: 30px;
+    padding: 50px 0 50px 0;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-left: 30px;
+    }
   }
 
   padding: 10px 0 10px 0;
