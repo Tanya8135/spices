@@ -25,11 +25,13 @@
   }
 
   @include tablet {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    width: 100vw;
+    display: block;
+  margin-top: -94px;
+    // position: absolute;
+    // top: 0%;
+    // left: 0%;
+    // z-index: -1;
+    // width: 100vw;
     max-width: 1199px;
     background-image: linear-gradient(rgba(61, 61, 61, 0.5), rgba(61, 61, 61, 0)),
       url(../../images/bg-fon_hero/bg-fon-tabl.jpg);
@@ -43,11 +45,13 @@
   }
 
   @include desktop {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    z-index: -1;
-    width: 100vw;
+    display: block;
+  margin-top: -134px;
+    // position: absolute;
+    // top: 0%;
+    // left: 0%;
+    // z-index: -1;
+    // width: 100vw;
     max-width: 1920px;
     background-image: linear-gradient(rgba(61, 61, 61, 0.5), rgba(61, 61, 61, 0)),
       url(../../images/bg-fon_hero/bg-fon-desс.jpg);
