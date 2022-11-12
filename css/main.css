@@ -338,11 +338,8 @@ img {
 }
 
 .hero {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  z-index: -1;
-  width: 100vw;
+  display: block;
+  margin-top: -64px;
   max-width: 767px;
   padding: 290px 0px 290px 0px;
   background-repeat: no-repeat;
@@ -446,4 +443,16 @@ img {
   fill: #f3b693;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.categories {
+  padding: 60px 0 60px 0;
+}
+
+.categories-title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #252525;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

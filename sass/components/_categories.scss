@@ -1,0 +1,10 @@
+.categories {
+    padding: 60px 0 60px 0;
+}
+
+.categories-title {
+    @include font(24px, 300, 1.2);
+    color: $base-color-text;
+    padding-bottom: 30px;
+}
+

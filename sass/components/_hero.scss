@@ -4,15 +4,13 @@
 }
 
 .hero {
-  //   position: absolute;
-  //   top: 0px;
-  //   left: 0px;
-  //   z-index: -1;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  z-index: -1;
-  width: 100vw;
+  display: block;
+  margin-top: -64px;
+  // position: fixed;
+  // top: 0%;
+  // left: 0%;
+  // z-index: -1;
+  // width: 100vw;
   max-width: 767px;
   padding: 290px 0px 290px 0px;
   background-repeat: no-repeat;
@@ -63,16 +61,19 @@
     }
   }
 
-  &-title {
-    @include font(32px, 300, 1.2);
+&-title {
+  @include font(32px, 300, 1.2);
 
-    margin: 0 auto;
-    max-width: 261px;
-    color: $hero-title;
-    margin-bottom: 16px;
-    text-align: center;
-  }
+  margin: 0 auto;
+  // padding-top: 192px;
+  max-width: 261px;
+  color: $hero-title;
+  margin-bottom: 16px;
+  text-align: center;
 }
+}
+
+
 
 .hero-line {
   margin: 0 auto;
@@ -90,6 +91,7 @@
   justify-content: center;
   margin: 0 auto;
   padding: 10px;
+  // margin-bottom: 290px;
   background-color: transparent;
   border: none;
   outline: none;
