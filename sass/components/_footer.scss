@@ -1,0 +1,60 @@
+.categories {
+  padding-bottom: 5px;
+}
+
+.categories-box {
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fuuter-item {
+padding-top: 20px;
+}
+
+.footer-link {
+  @include font(18px, 300, 1.2);
+
+  color: $base-color-text;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $text-color-hover;
+    outline: none;
+
+  }
+}
+
+.footer-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: -100px;
+    width: 335px;
+    height: 0.3px;
+background-color: $line-footer-nav;
+}
+
+.icon-footer {
+  position: absolute;
+  top: 4px;
+  left: 190px;
+  fill: $arrow-footer-nav;
+  width: 14px;
+
+  transform: rotate(90deg);
+
+  transition: transform 300ms linear;
+
+  &:hover {
+    transform: rotate(270deg);
+  }
+}

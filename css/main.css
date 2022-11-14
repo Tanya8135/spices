@@ -444,12 +444,37 @@ img {
   padding: 60px 0 60px 0;
 }
 
+.categories-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 375px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .categories-box {
+    width: 768px;
+  }
+}
+
 .categories-title {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.2;
   color: #252525;
   padding-bottom: 30px;
+  padding-left: 5px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .categories-title {
+    padding-left: 80px;
+  }
 }
 
 .categories-list {
@@ -632,4 +657,74 @@ img {
   line-height: 1.1;
   text-align: center;
   color: #252525;
+}
+
+.categories {
+  padding-bottom: 5px;
+}
+
+.categories-box {
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fuuter-item {
+  padding-top: 20px;
+}
+
+.footer-link {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #252525;
+  position: relative;
+}
+.footer-link:hover, .footer-link:focus {
+  color: #ee7e3f;
+  outline: none;
+}
+
+.footer-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: -100px;
+  width: 335px;
+  height: 0.3px;
+  background-color: #252525;
+}
+
+.icon-footer {
+  position: absolute;
+  top: 4px;
+  left: 190px;
+  fill: #E0BEA2;
+  width: 14px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+.icon-footer:hover {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }/*# sourceMappingURL=main.css.map */
