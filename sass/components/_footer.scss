@@ -1,18 +1,8 @@
-.categories {
-  padding-bottom: 5px;
+.footer-nav {
+  @include desktop {
+  display: none;
+  }
 }
-
-.categories-box {
-  margin-right: 0 auto;
-  margin-left: 0 auto;
-}
-
-// .footer-nav {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 // .footer-list {
 //   display: flex;
@@ -29,6 +19,10 @@
   align-items: center;
   position: relative;
   padding-top: 20px;
+
+  &:nth-child(1) {
+    padding-top: 0;
+  }
 }
 
 .footer-link {
@@ -60,17 +54,24 @@
 // }
 
 .footer-line {
-  width: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 335px;
   height: 0.3px;
   background-color: $line-footer-nav;
 }
 
 .icon-footer {
+  @include tablet {
+    width: 19px;
+  }
   // display: inline-flex;
 
   position: absolute;
-  top: 25px;
-  left: 310px;
+  top: 50%;
+  left: 94%;
   fill: $arrow-footer-nav;
   width: 14px;
 
@@ -84,12 +85,20 @@
 }
 
 .social-list {
+  @include desktop {
+    display: none;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .social-item {
+  @include tablet {
+    margin-right: 30px;
+  }
+
   margin-right: 10px;
 
   &:nth-child(2) {
@@ -98,14 +107,22 @@
 }
 
 .social-footer {
+  @include tablet {
+width: 30px;
+  }
+
   fill: $icon-footer-color;
   padding-top: 10px;
   padding-bottom: 5px;
-  // width: 19px;
+  width: 19px;
   // height: 19px;
 }
 
 .footer-contact__list {
+  @include desktop {
+    display: none;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,6 +139,10 @@
 }
 
 .footer-contact__link {
+  @include tablet {
+@include font(16px, 200, 1.1);
+  }
+
   @include font(14px, 200, 1.1);
 
   color: $base-color-text;
@@ -133,4 +154,49 @@
   color: $base-color-text;
   text-align: center;
   padding-bottom: 5px;
+}
+
+// Footer desktop 
+.footer-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company {
+  width: 250px;
+  margin-right: 47px;
+}
+
+.footer-title-desktop {
+  @include font(20px, 300, 1.2);
+
+  text-transform: uppercase;
+  color: $base-color-text;
+}
+
+.company-list {
+  padding-top: 30px;
+}
+
+.company-item {
+  padding-bottom: 10px;
+
+  &:nth-child(2) {
+    padding-bottom: 0;
+  }
+}
+
+.useful {
+  width: 250px;
+  margin-right: 47px;
+}
+
+.buyer {
+  width: 250px;
+  margin-right: 47px;
+}
+
+.contacts {
+  width: 250px;
 }

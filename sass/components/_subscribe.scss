@@ -1,4 +1,7 @@
 .subscribe {
+  @include desktop {
+    padding-bottom: 100px;
+  }
   // display: block;
   // margin-right: 0 auto;
   // margin-left: 0 auto;
@@ -69,6 +72,7 @@
     @include font(16px, 300, 1.2);
     padding: 16px 241px 16px 241px;
     cursor: pointer;
+    margin-bottom: 20px;
   }
   @include font(14px, 300, 1.1);
 
@@ -94,6 +98,11 @@
 }
 
 .agreement-text {
+  @include desktop {
+@include font-min(16px, 1.2);
+width: 600px;
+  }
+
   @include font(14px, 200, 1.1);
 
   text-align: center;
