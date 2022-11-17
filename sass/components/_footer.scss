@@ -43,7 +43,7 @@
   }
 
   &--last {
-  @include font(18px, 300, 1.2);
+    @include font(18px, 300, 1.2);
     color: $base-color-text;
   }
 }
@@ -67,7 +67,7 @@
 
 .icon-footer {
   // display: inline-flex;
-  
+
   position: absolute;
   top: 25px;
   left: 310px;
@@ -114,11 +114,11 @@
 }
 
 .footer-contact__item {
-padding-bottom: 5px;
+  padding-bottom: 5px;
 
-&:nth-child(2) {
-  padding-bottom: 0;
-}
+  &:nth-child(2) {
+    padding-bottom: 0;
+  }
 }
 
 .footer-contact__link {

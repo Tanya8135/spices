@@ -486,6 +486,7 @@ img {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .categories-item {
@@ -500,8 +501,20 @@ img {
     padding-top: 0;
   }
 }
+.categories-item:nth-child(-n+2) {
+  margin-bottom: 55px;
+}
 .categories-item:nth-child(2n) {
   margin-right: 0;
+}
+.categories-item:nth-child(n+3) {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .categories-overley {
