@@ -1,6 +1,6 @@
 .footer-nav {
   @include desktop {
-  display: none;
+    display: none;
   }
 }
 
@@ -108,7 +108,7 @@
 
 .social-footer {
   @include tablet {
-width: 30px;
+    width: 30px;
   }
 
   fill: $icon-footer-color;
@@ -140,7 +140,7 @@ width: 30px;
 
 .footer-contact__link {
   @include tablet {
-@include font(16px, 200, 1.1);
+    @include font(16px, 200, 1.1);
   }
 
   @include font(14px, 200, 1.1);
@@ -156,7 +156,7 @@ width: 30px;
   padding-bottom: 5px;
 }
 
-// Footer desktop 
+// Footer desktop --------------------------------------------//
 .footer-desktop {
   display: flex;
   align-items: center;
