@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/catalog.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div class="nav-box">
+          <button type="button" class="btn-menu">
+            <svg viewBox="0 0 100 100" class="icon-menu">
+              <use xlink:href="./images/icons.svg#icon-btn-menu_header"></use>
+            </svg>
+          </button>
+          <select name="language" class="select-mob">
+            <option value="ua" class="test">UA</option>
+            <option value="en" class="test">EN</option>
+            <option value="ru" selected class="test">RU</option>
+          </select>
+          <nav class="header-nav">
+            <div class="logo">
+              <a href="index.html">
+                <svg viewBox="0 0 100 100" class="icon-logo">
+                  <use xlink:href="./images/logo.svg#icon-logo"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="header-list list">
+              <li class="header-item">
+                <a href="" class="header-link link">NEW</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">КАТАЛОГ</a>
+              </li>
+              <li class="header-item">
+                <a href="" class="header-link link">О НАС</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="actions-box">
+          <div class="select-box">
+            <select name="language" class="select-desktop">
+              <option value="ua">UA</option>
+              <option value="en">EN</option>
+              <option value="ru" selected>RU</option>
+            </select>
+
+            <select name="language" class="select-desktop">
+              <option value="uah" selected class="option">UAH</option>
+              <option value="usd" class="option">USD</option>
+              <option value="eur" class="option">EUR</option>
+            </select>
+          </div>
+          <div class="actions">
+            <ul class="actions-list list">
+              <li class="actions-item">
+                <a href="" class="actions-link link">
+                  <svg viewBox="0 0 100 100" class="icon-actions">
+                    <use xlink:href="./images/icons.svg#icon-search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="actions-item">
+                <a href="" class="actions-link link">
+                  <svg viewBox="0 0 100 100" class="icon-actions">
+                    <use xlink:href="./images/icons.svg#icon-profile"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="actions-item">
+                <a href="" class="actions-link link">
+                  <svg viewBox="0 0 100 100" class="icon-actions">
+                    <use xlink:href="./images/icons.svg#icon-favorites"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="actions-item">
+                <a href="" class="actions-link link">
+                  <svg viewBox="0 0 100 100" class="icon-actions">
+                    <use xlink:href="./images/icons.svg#icon-basket"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="actions-list-mob list">
+              <li class="actions-item">
+                <a href="" class="link">
+                  <svg viewBox="0 0 100 100" class="icon-actions">
+                    <use xlink:href="./images/icons.svg#icon-search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="actions-item">
+                <a href="" class="link">
+                  <svg viewBox="0 0 100 100" class="icon-actions">
+                    <use xlink:href="./images/icons.svg#icon-profile"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Catalog images -->
+    <main class="main">
+      <section class="filters">
+        <div class="container">
+          <b class="menu-filter">Главная</b>
+          <svg viewBox="0 0 100 100" class="icon-btn" width="14">
+            <use xlink:href="./images/icons.svg#icon-btn-hero-v"></use>
+          </svg>
+          <b class="menu-filter">Каталог</b>
+
+          <button type="button" class="btn-catalog">
+            Каталог
+            <svg viewBox="0 0 100 100" class="icon-btn" width="14">
+              <use xlink:href="./images/icons.svg#icon-btn-hero-v"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -18,11 +18,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 20px;
+  // padding-top: 20px;
 
-  &:nth-child(1) {
-    padding-top: 0;
-  }
+  // &:nth-child(1) {
+  //   padding-top: 0;
+  // }
 }
 
 .footer-link {
@@ -61,6 +61,7 @@
   // width: 335px;
   height: 0.3px;
   background-color: $line-footer-nav;
+  margin-bottom: 20px;
 }
 
 .icon-footer {
@@ -70,7 +71,7 @@
   // display: inline-flex;
 
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 94%;
   fill: $arrow-footer-nav;
   width: 14px;
@@ -111,7 +112,7 @@
     width: 30px;
   }
 
-  fill: $icon-footer-color;
+  fill: $social-footer-color;
   padding-top: 10px;
   padding-bottom: 5px;
   width: 19px;
@@ -149,6 +150,14 @@
 }
 
 .copyright {
+  @include desktop {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    text-align: start;
+    padding-left: 18px;
+  }
+
   @include font(10px, 300, 1.2);
 
   color: $base-color-text;
@@ -157,15 +166,31 @@
 }
 
 // Footer desktop --------------------------------------------//
-.footer-desktop {
+.footer-nav-desktop {
+  @include min-mobile {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
 }
 
-.company {
-  width: 250px;
+.list-nav-footer {
+  min-width: 250px;
   margin-right: 47px;
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
 }
 
 .footer-title-desktop {
@@ -175,28 +200,47 @@
   color: $base-color-text;
 }
 
-.company-list {
+.footer-list-desktop {
   padding-top: 30px;
 }
 
-.company-item {
+.footer-item-desktop {
   padding-bottom: 10px;
 
-  &:nth-child(2) {
+  &:nth-child(3) {
     padding-bottom: 0;
   }
 }
 
-.useful {
-  width: 250px;
-  margin-right: 47px;
+.footer-link-desktop {
+  @include font(18px, 200, 1.2);
+
+  color: $base-color-text;
 }
 
-.buyer {
-  width: 250px;
-  margin-right: 47px;
+.social-item-desktop {
+  display: inline-flex;
+  margin-right: 10px;
+  padding-bottom: 10px;
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
 }
 
-.contacts {
-  width: 250px;
+.social-link-desktop {
+  width: 19px;
+  height: 19px;
+}
+
+.social-footer-desctop {
+  fill: $social-footer-color;
+}
+
+.contacts-item {
+  padding-bottom: 10px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }

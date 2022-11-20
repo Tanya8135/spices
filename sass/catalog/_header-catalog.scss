@@ -1,0 +1,241 @@
+.header {
+    // @include tablet {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
+  
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px 0 50px;
+    }
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    position: relative;
+  }
+  
+  .nav-box {
+    display: flex;
+  }
+  
+  .actions-box {
+    display: flex;
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-list {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 233px;
+      padding: 50px 0 50px 0;
+    }
+  
+    display: none;
+  }
+  
+  .header-item {
+    margin-right: 25px;
+  
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+  
+  .header-link {
+    color: $base-color-text;
+
+    &:hover,
+    &:focus {
+        color: $nav-header-hover
+    }
+  }
+  
+  .select-box {
+    @include desktop {
+      display: flex;
+      // margin-left: 292px;
+    }
+  }
+  
+  .select-mob {
+    @include tablet {
+      margin-left: 42px;
+    }
+  
+    @include desktop {
+      display: none;
+    }
+  
+    margin-left: 22px;
+    margin-right: 42px;
+  
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .select-desktop {
+    @include desktop {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+  
+      background-color: transparent;
+      border: none;
+      padding: 0;
+  
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  
+    display: none;
+  }
+  
+  .icon-logo {
+    @include tablet {
+      width: 70px;
+    }
+  
+    @include desktop {
+      width: 100px;
+    }
+  
+    width: 50px;
+    cursor: none;
+  }
+  
+  .logo {
+    @include tablet {
+      position: absolute;
+      top: 10%;
+      left: 46%;
+    }
+  
+    @include desktop {
+      position: absolute;
+      top: 10%;
+      left: 46%;
+    }
+  
+    position: absolute;
+    top: 10%;
+    left: 44%;
+  }
+  
+  .btn-menu {
+    @include tablet {
+      padding: 30px 0 30px 0;
+    }
+  
+    @include desktop {
+      cursor: pointer;
+      margin-right: 84px;
+      margin-left: 100px;
+      padding: 50px 0 50px 0;
+    }
+  
+    margin: 0;
+    padding: 0;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: none;
+  }
+  
+  .icon-menu {
+    min-width: 34px;
+    min-height: 24px;
+    fill: $menu-header-catalog;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .actions-list {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      margin-left: 76px;
+    }
+  
+    display: none;
+  }
+  
+  .actions-list-mob {
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-actions {
+    @include tablet {
+      min-width: 25px;
+    }
+  
+    min-width: 20px;
+    fill: $actions-icon-catalog;
+  }
+  
+  .actions-item {
+    @include tablet {
+      margin-right: 30px;
+      padding: 30px 0 30px 0;
+  
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+  
+      &:nth-child(3) {
+        margin-left: 30px;
+      }
+    }
+  
+    @include desktop {
+      margin-right: 30px;
+      padding: 50px 0 50px 0;
+  
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+  
+      &:nth-child(3) {
+        margin-left: 30px;
+      }
+    }
+  
+    padding: 10px 0 10px 0;
+    margin-right: 50px;
+  
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+  
