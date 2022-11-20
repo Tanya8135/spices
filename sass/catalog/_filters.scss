@@ -1,0 +1,97 @@
+.filters {
+    padding: 15px 0 15px 0;
+}
+
+.menu-filter-text {
+    @include font(16px, 300, 1.2);
+
+}
+
+.arrow-filter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: $arrow-catalog;
+    margin: 0 5px 0 5px;
+    width: 19px;
+}
+
+.menu-filter {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.btn-catalog-box {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-catalog {
+    @include desktop {
+        cursor: pointer;
+    }
+
+    @include font(18px, 300, 1.2);
+    color: $white-text-btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 128px 10px 128px;
+    margin-bottom: 15px;
+    background-color: $btn-catalof;
+    outline: none;
+    border: none;
+    cursor: none;
+}
+
+.icon-arrow {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    fill: $arrow-white;
+    margin-left: 10px;
+    margin-top: 4px;
+    
+    transform: rotate(90deg);
+}
+
+.text-filter {
+    @include font(16px, 300, 1.2);
+
+    color: $base-color-text;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.icon-filter {
+    fill: $icon-filter-catalog;
+    min-width: 15px;
+}
+
+.arrow-filter-deg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: $arrow-catalog;
+   margin-left: 240px;
+    min-width: 20px;
+
+    transform: rotate(90deg);
+}
+
+.filter-box {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.line-filter {
+    display: flex;
+    justify-content: center;
+    width: 344px;
+    height: 0.3px;
+    background-color: $line-catalog;
+    margin-bottom: 15px;
+}
