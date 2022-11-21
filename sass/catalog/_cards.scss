@@ -1,0 +1,80 @@
+.cards-list {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  // flex-direction: column;
+}
+
+.cards-item {
+    @include tablet {
+        margin-right: 30px;
+    }
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.cards-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-name {
+  @include font(14px, 300, 1.1);
+  color: $base-color-text;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.cards-new {
+  @include font(14px, 300, 1.1);
+
+  color: $text-new-color;
+}
+
+.cards-price {
+  @include font(14px, 700, 1.1);
+
+  font-family: 'Jost', sans-serif;
+  color: $base-color-text;
+  padding-bottom: 11px;
+}
+
+.cards-size {
+  @include font(14px, 300, 1.1);
+  text-transform: uppercase;
+  color: $base-color-text-50;
+  padding-bottom: 8px;
+}
+
+.selection-color-list {
+  display: flex;
+}
+
+.selection-color-item {
+  width: 14px;
+  height: 14px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: $choice-clothing-white;
+  margin-right: 5px;
+
+  &:nth-child(2) {
+    border: 1px solid transparent;
+    background-color: $choice-clothing-blue;
+  }
+
+  &:nth-child(3) {
+    border: 1px solid transparent;
+    background-color: $choice-clothing-beige;
+    margin-right: 0;
+  }
+}

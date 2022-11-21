@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Raleway:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -134,29 +134,69 @@
           <div class="btn-catalog-box">
             <button type="button" class="btn-catalog">
               Каталог
-              <svg viewBox="0 0 100 100" class="icon-arrow"  width="12">
+              <svg viewBox="0 0 100 100" class="icon-arrow" width="12">
                 <use xlink:href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
+          <!-- Mobile filter-box -->
           <div class="filter-box">
             <b class="text-filter">Фильтры</b>
             <svg viewBox="0 0 100 100" class="icon-filter" width="14">
               <use xlink:href="./images/icons.svg#icon-felters"></use>
             </svg>
             <svg viewBox="0 0 100 100" class="arrow-filter-deg" width="14">
-                <use xlink:href="./images/icons.svg#icon-btn-hero-v"></use>
-              </svg>
+              <use xlink:href="./images/icons.svg#icon-btn-hero-v"></use>
+            </svg>
           </div>
           <div class="line-filter"></div>
+
+          <!-- Tablet filter-box -->
+          <ul class="tab-filter-list list">
+            <li class="tab-filter-item">
+              <a href="" class="tab-filter-link link">
+                Размер
+                <svg viewBox="0 0 100 100" class="tab-icon-arrow" width="12">
+                  <use xlink:href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="tab-filter-item">
+              <a href="" class="tab-filter-link link">
+                Цвет
+                <svg viewBox="0 0 100 100" class="tab-icon-arrow" width="12">
+                  <use xlink:href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="tab-filter-item">
+              <a href="" class="tab-filter-link link">
+                Цена
+                <svg viewBox="0 0 100 100" class="tab-icon-arrow" width="12">
+                  <use xlink:href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="tab-filter-item">
+              <a href="" class="tab-filter-link link">
+                Сортировать по
+                <svg viewBox="0 0 100 100" class="tab-icon-arrow" width="12">
+                  <use xlink:href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
+
+      <!-- Cards -->
       <section class="cards">
-<ul class="cards-list list">
-  <li class="cards-item">
-    <a href="" class="cards-link link">
-      <div class="cards-overley">
-        <img
+        <div class="container">
+          <ul class="cards-list list">
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
                     srcset="
                       ./images/categories/274/jacket274.jpg   274w,
                       ./images/categories/165/jacket165.jpg   165w,
@@ -166,46 +206,454 @@
                     sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
                     src="./images/categories/274/jacket274.jpg"
                     alt="Куртки"
+                /></a>
+                <div class="cards-text">
+                  <p class="cards-name">Белая куртка <span class="cards-new">new</span></p>
+                  <p class="cards-price">2900 грн</p>
+                  <p class="cards-size">XXS XS S M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/coat274.jpg   274w,
+                      ./images/categories/165/coat165.jpg   165w,
+                      ./images/categories/274/coat274@2.jpg 548w,
+                      ./images/categories/165/coat165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/coat274.jpg"
+                    alt="Пальто"
                   />
-        <div class="cards-text"></div>
-      </div>
-    </a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-  <li class="cards-item">
-    <a href="" class="cards-link link"></a>
-  </li>
-</ul>
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Синее пальто</p>
+                  <p class="cards-price">3150 грн</p>
+                  <p class="cards-size">XS M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/fur_coat274.jpg   274w,
+                      ./images/categories/165/fur_coat165.jpg   165w,
+                      ./images/categories/274/fur_coat274@2.jpg 548w,
+                      ./images/categories/165/fur_coat165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/fur_coat274.jpg"
+                    alt="Шубы"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Бежевая шуба</p>
+                  <p class="cards-price">4200 грн</p>
+                  <p class="cards-size">XS S L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/parka274.jpg   274w,
+                      ./images/categories/165/parka165.jpg   165w,
+                      ./images/categories/274/parka274@2.jpg 548w,
+                      ./images/categories/165/parka165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/parka274.jpg"
+                    alt="Парки"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Синяя парка</p>
+                  <p class="cards-price">2900 грн</p>
+                  <p class="cards-size">XXS XS S M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/jacket274.jpg   274w,
+                      ./images/categories/165/jacket165.jpg   165w,
+                      ./images/categories/274/jacket274@2.jpg 548w,
+                      ./images/categories/165/jacket165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/jacket274.jpg"
+                    alt="Куртки"
+                /></a>
+                <div class="cards-text">
+                  <p class="cards-name">Белая куртка <span class="cards-new">new</span></p>
+                  <p class="cards-price">2900 грн</p>
+                  <p class="cards-size">XXS XS S M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/coat274.jpg   274w,
+                      ./images/categories/165/coat165.jpg   165w,
+                      ./images/categories/274/coat274@2.jpg 548w,
+                      ./images/categories/165/coat165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/coat274.jpg"
+                    alt="Пальто"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Синее пальто</p>
+                  <p class="cards-price">3150 грн</p>
+                  <p class="cards-size">XS M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/fur_coat274.jpg   274w,
+                      ./images/categories/165/fur_coat165.jpg   165w,
+                      ./images/categories/274/fur_coat274@2.jpg 548w,
+                      ./images/categories/165/fur_coat165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/fur_coat274.jpg"
+                    alt="Шубы"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Бежевая шуба</p>
+                  <p class="cards-price">4200 грн</p>
+                  <p class="cards-size">XS S L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/parka274.jpg   274w,
+                      ./images/categories/165/parka165.jpg   165w,
+                      ./images/categories/274/parka274@2.jpg 548w,
+                      ./images/categories/165/parka165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/parka274.jpg"
+                    alt="Парки"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Синяя парка</p>
+                  <p class="cards-price">2900 грн</p>
+                  <p class="cards-size">XXS XS S M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/jacket274.jpg   274w,
+                      ./images/categories/165/jacket165.jpg   165w,
+                      ./images/categories/274/jacket274@2.jpg 548w,
+                      ./images/categories/165/jacket165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/jacket274.jpg"
+                    alt="Куртки"
+                /></a>
+                <div class="cards-text">
+                  <p class="cards-name">Белая куртка <span class="cards-new">new</span></p>
+                  <p class="cards-price">2900 грн</p>
+                  <p class="cards-size">XXS XS S M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/coat274.jpg   274w,
+                      ./images/categories/165/coat165.jpg   165w,
+                      ./images/categories/274/coat274@2.jpg 548w,
+                      ./images/categories/165/coat165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/coat274.jpg"
+                    alt="Пальто"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Синее пальто</p>
+                  <p class="cards-price">3150 грн</p>
+                  <p class="cards-size">XS M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/fur_coat274.jpg   274w,
+                      ./images/categories/165/fur_coat165.jpg   165w,
+                      ./images/categories/274/fur_coat274@2.jpg 548w,
+                      ./images/categories/165/fur_coat165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/fur_coat274.jpg"
+                    alt="Шубы"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Бежевая шуба</p>
+                  <p class="cards-price">4200 грн</p>
+                  <p class="cards-size">XS S L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-overley">
+                <a href="" class="cards-link link">
+                  <img
+                    srcset="
+                      ./images/categories/274/parka274.jpg   274w,
+                      ./images/categories/165/parka165.jpg   165w,
+                      ./images/categories/274/parka274@2.jpg 548w,
+                      ./images/categories/165/parka165@2.jpg 330w
+                    "
+                    sizes="(min-width: 1920px) 274px, (min-width: 768px) 274px, (min-width: 375px) 165px"
+                    src="./images/categories/274/parka274.jpg"
+                    alt="Парки"
+                  />
+                </a>
+                <div class="cards-text">
+                  <p class="cards-name">Синяя парка</p>
+                  <p class="cards-price">2900 грн</p>
+                  <p class="cards-size">XXS XS S M L</p>
+                  <ul class="selection-color-list list">
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                    <li class="selection-color-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Navigation -->
+      <div class="container">
+        <nav class="footer-nav">
+          <ul class="footer-list list">
+            <li class="footer-item">
+              <a href="" class="footer-link link">КОМПАНИЯ </a>
+              <svg viewBox="0 0 100 100" class="icon-footer">
+                <use xlink:href="./images/icons.svg#icon-btn-hero-v"></use>
+              </svg>
+            </li>
+            <div class="footer-line"></div>
+            <li class="footer-item">
+              <a href="" class="footer-link link">ПОЛЕЗНОЕ </a>
+              <svg viewBox="0 0 100 100" class="icon-footer">
+                <use xlink:href="./images/icons.svg#icon-btn-hero-v"></use>
+              </svg>
+            </li>
+            <div class="footer-line"></div>
+            <li class="footer-item">
+              <a href="" class="footer-link link">ПОКУПАТЕЛЮ </a>
+              <svg viewBox="0 0 100 100" class="icon-footer">
+                <use xlink:href="./images/icons.svg#icon-btn-hero-v"></use>
+              </svg>
+            </li>
+            <div class="footer-line"></div>
+            <li class="footer-item">
+              <a href="" class="footer-link--last link">КОНТАКТЫ </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social-list list">
+          <li class="social-item">
+            <a href="" class="social-link link">
+              <svg viewBox="0 0 100 100" class="social-footer" width="19">
+                <use xlink:href="./images/icons.svg#icon-instagram-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link link">
+              <svg viewBox="0 0 100 100" class="social-footer" width="19">
+                <use xlink:href="./images/icons.svg#icon-telegram-footer"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-contact__list list">
+          <li class="footer-contact__item">
+            <a href="tel:+380730963644" class="footer-contact__link link">+38(073) 096 36 44</a>
+          </li>
+          <li class="footer-contact__item">
+            <a href="mailto:info@yanki.com" class="footer-contact__link link">info@yanki.com</a>
+          </li>
+        </ul>
+
+        <!-- Footer desktop -->
+        <nav class="footer-nav-desktop">
+          <div class="company list-nav-footer">
+            <b class="footer-title-desktop">КОМПАНИЯ</b>
+            <ul class="footer-list-desktop company-list list">
+              <li class="footer-item-desktop company-item">
+                <a href="" class="footer-link-desktop company-link link">О нас</a>
+              </li>
+              <li class="footer-item-desktop company-item">
+                <a href="" class="footer-link-desktop company-link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="useful list-nav-footer">
+            <b class="footer-title-desktop">ПОКУПАТЕЛЮ</b>
+            <ul class="footer-list-desktop useful-list list">
+              <li class="footer-item-desktop useful-item">
+                <a href="" class="footer-link-desktop useful-link link">Оплата и доставка</a>
+              </li>
+              <li class="footer-item-desktop useful-item">
+                <a href="" class="footer-link-desktop useful-link link">Условия возврата</a>
+              </li>
+              <li class="footer-item-desktop useful-item">
+                <a href="" class="footer-link-desktop useful-link link">Бонусная система</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="buyer list-nav-footer">
+            <b class="footer-title-desktop">ПОКУПАТЕЛЮ</b>
+            <ul class="footer-list-desktop buyer-list list">
+              <li class="footer-item-desktop buyer-item">
+                <a href="" class="footer-link-desktop buyer-link link">Избранное</a>
+              </li>
+              <li class="footer-item-desktop buyer-item">
+                <a href="" class="footer-link-desktop buyer-link link">Публичная оферта</a>
+              </li>
+              <li class="footer-item-desktop buyer-item">
+                <a href="" class="footer-link-desktop buyer-link link"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="contacts list-nav-footer">
+            <b class="footer-title-desktop">КОНТАКТЫ</b>
+            <ul class="footer-list-desktop contacts-list list">
+              <li class="social-item-desktop">
+                <a href="" class="social-link-desktop link">
+                  <svg viewBox="0 0 100 100" class="social-footer-desctop" width="19">
+                    <use xlink:href="./images/icons.svg#icon-instagram-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item-desktop">
+                <a href="" class="social-link-desktop link">
+                  <svg viewBox="0 0 100 100" class="social-footer-desctop" width="19">
+                    <use xlink:href="./images/icons.svg#icon-telegram-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts-item">
+                <a href="mailto:info@yanki.com" class="footer-link-desktop contacts-link link">
+                  +38(073) 096 36 44</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a href="mailto:info@yanki.com" class="footer-link-desktop contacts-link link">
+                  info@yanki.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <p class="copyright">&#169; 2021 Yanki. All rights reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
