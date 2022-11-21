@@ -94,6 +94,7 @@
 .filter-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-bottom: 5px;
 
   @include tablet {
@@ -105,6 +106,11 @@
   }
 }
 
+.line-box {
+    display: flex;
+    justify-content: center;
+}
+
 .line-filter {
   @include tablet {
     display: none;
@@ -114,16 +120,24 @@
     display: none;
   }
 
-  display: flex;
-  justify-content: center;
-  width: 344px;
-  height: 0.3px;
-  background-color: $line-catalog;
-  margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 344px;
+    height: 0.3px;
+    background-color: $line-catalog;
+    margin-bottom: 15px;
 }
 
 // Tablet filter-box--------------
 .tab-filter-list {
+  @include min-mobile {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+
   display: flex;
   align-items: center;
 }
@@ -144,7 +158,6 @@
 
 .tab-icon-arrow {
   fill: $arrow-catalog;
-  // padding: 1px 0 1px 0;
   margin-bottom: -2px;
   margin-left: 5px;
 
