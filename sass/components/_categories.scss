@@ -30,14 +30,18 @@
   }
 
   @include tablet {
-    padding-left: 80px;
+    padding-left: 92px;
   }
 
   @include font(24px, 300, 1.2);
 
   color: $base-color-text;
   padding-bottom: 30px;
-  padding-left: 5px;
+  padding-left: 6px;
+}
+
+.categories-title-link {
+  color: $base-color-text;
 }
 
 .categories-list {
@@ -51,43 +55,44 @@
 }
 
 .categories-item {
-  @include tablet {
-    margin-right: 30px;
-    padding-top: 30px;
+  margin-right: 5px;
 
-    &:nth-child(-n + 2) {
-      padding-top: 0;
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+  &:nth-child(n + 3) {
+    display: none;
+  }
+
+  @include tablet {
+    position: relative;
+    margin-right: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    &:nth-child(n + 3) {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 
   @include desktop {
     margin: 0;
     margin-right: 15px;
-  }
 
-  margin-right: 5px;
-
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(n + 3) {
-    display: none;
-  }
-
-  // &:nth-child(-n + 2) {
-  //   margin-bottom: 55px;
-  // }
-
-  &:nth-child(2n) {
-    @include desktop {
-      margin-right: 15px;
-
-      &:nth-child(4) {
-        margin-right: 0;
-      }
+    &:nth-child(n + 3) {
+      display: flex;
     }
-    
+    &:nth-child(2) {
+      margin-right: 15px;
+    }
+    &:nth-child(4) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -145,9 +150,9 @@
 }
 
 .arrow-link {
-  @include tablet {
-    display: none;
-  }
+  // @include tablet {
+  //   display: none;
+  // }
 
   @include desktop {
     display: none;
