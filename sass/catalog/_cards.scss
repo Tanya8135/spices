@@ -142,6 +142,10 @@
   height: 35px;
   background-color: $like-bg;
   border-bottom-left-radius: 20px;
+
+  &:hover {
+    box-shadow: inset 0px 3px 7px rgba(37, 37, 37, 0.15);
+  }
 }
 
 .icon-like {
@@ -149,4 +153,12 @@
   top: 30%;
   left: 35%;
   fill: $icon-like-catalog;
+
+// "Попытка написать эффект like"
+  &:checked + .like-full {
+    // fill: black;
+    background-image: url('../images/like.svg');
+    background-size: contain;
+    background-origin: border-box;
+  }
 }

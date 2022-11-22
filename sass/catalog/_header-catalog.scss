@@ -61,6 +61,10 @@
         color: $nav-header-hover
     }
   }
+
+  .current-nav {
+    color: $current-color;
+  }
   
   .select-box {
     @include desktop {
@@ -110,6 +114,7 @@
     }
   
     @include desktop {
+      cursor: pointer;
       width: 100px;
     }
   

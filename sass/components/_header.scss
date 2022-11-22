@@ -53,6 +53,12 @@
   }
 }
 
+// .current-nav {
+//   position: relative;
+//   display: block;
+//   color: $current-color;
+// }
+
 .header-link {
   color: $nav-header;
 }
@@ -106,6 +112,7 @@
 
   @include desktop {
     width: 100px;
+    cursor: pointer;
   }
 
   width: 50px;

@@ -120,6 +120,10 @@ img {
   color: #E0BEA2;
 }
 
+.current-nav {
+  color: #E0BEA2;
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
   .select-box {
     display: -webkit-box;
@@ -178,6 +182,7 @@ img {
 }
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
   .icon-logo {
+    cursor: pointer;
     width: 100px;
   }
 }
@@ -506,15 +511,6 @@ img {
 }
 
 .line-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 344px;
   height: 0.3px;
   background-color: #252525;
@@ -752,12 +748,21 @@ img {
     height: 40px;
   }
 }
+.like-overlay:hover {
+  -webkit-box-shadow: inset 0px 3px 7px rgba(37, 37, 37, 0.15);
+          box-shadow: inset 0px 3px 7px rgba(37, 37, 37, 0.15);
+}
 
 .icon-like {
   position: absolute;
   top: 30%;
   left: 35%;
   fill: #ffffff;
+}
+.icon-like:checked + .like-full {
+  background-image: url("../images/like.svg");
+  background-size: contain;
+  background-origin: border-box;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
